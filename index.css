@@ -64,7 +64,7 @@ a:link {
 
 .button:hover {
     background-color:black;
-    color:white;
+    color:white; /* Can't get my button text to go white when hovered... */
 }
 
 header {
@@ -247,6 +247,15 @@ row-item {
     gallery-section img {
        width:20em;
        heigth:20em;
+    }
+
+    .contact-section h2 {
+        display:none;
+    }
+
+    .contact-section .button {
+        width:5em;
+        font-size: 2em;
     }
 
     
