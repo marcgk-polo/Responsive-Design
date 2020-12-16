@@ -46,11 +46,55 @@ table {
 
 
 
-
-/* ========================= media start ========================== */
-
 * {
     border: 1px solid black;
+}
+
+
+a:link {
+    text-decoration: none;
+    color:black;
+  }
+  
+  
+  a:visited {
+    text-decoration: none;
+    color:black;
+  }
+
+.button:hover {
+    background-color:black;
+    color:white;
+}
+
+header {
+    background-color: gray;
+    padding:5%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+h1 {
+    font-size:2em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+toolbar {
+    display:flex;
+    flex-direction: row;
+    margin-left:1em;
+}
+
+.button {
+    border: 1px black solid;
+    padding: 1em;
+    font-size: 1em;
+    background-color: lightgray;
+    width:5em;
+    text-align:center;
 }
 
 top-section {
@@ -68,6 +112,11 @@ image-container {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+image-container img {
+    height: 20em;
+    width: 20em;
 }
 
 top-section-information {
@@ -90,129 +139,7 @@ top-section button {
 .about-me-section {
     display: flex;
     text-align: flex-start;
-    width: 80%;
-}
-
-@media (max-width:800px) {
-    body {
-        background-color: pink;
-    }
-
-    top-section {
-        display:flex;
-        flex-direction: column;
-        justify-content: center; /*why doesn't this center it by itself? I had to do margin-right and margin-left auto to center...*/
-        margin-top: 2em;
-        margin-right: auto;
-        margin-left: auto;
-        width:80%;
-    }
-
-    top-section-information {
-        padding-left: 0em;
-    }
-    
-    image-container {
-        display: flex;
-        justify-content: center;
-    }
-
-    top-section h2 {
-        display: flex;
-        justify-content: center;
-    }
-    
-    top-section button {
-        display: flex;
-        justify-content: center; /*why doesn't this center it by itself? I had to do margin-right and margin-left auto to center...*/
-        width:10em;
-        height: 3em;
-        line-height:3em;
-        margin: auto; 
-    }
-    
-    .about-me-section {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin: auto;
-        width: 80%;
-    }
-}
-
-
-@media (max-width:500px) {
-    body {
-        background-color:forestgreen;
-    }
-}
-
-
-/* ========================= media end ========================== */
-
-
-
-about-marc {
-    margin-top:1000px;
-}
-
-a:link {
-    text-decoration: none;
-    color:black;
-  }
-  
-  
-  a:visited {
-    text-decoration: none;
-    color:black;
-  }
-
-.button:hover {
-    background-color:black;
-    color:white;
-}
-
-.header-area {
-    background-color: gray;
-    padding:5%;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-h1 {
-    font-size:2em;
-    margin-top: .5em;
-    margin-bottom: .5em;
-}
-
-.toolbar {
-    display:flex;
-    margin-left:1em;
-}
-
-.button {
-    border: 1px black solid;
-    padding: 1em;
-    font-size: 1em;
-    background-color: lightgray;
-    width:5em;
-    text-align:center;
-}
-
-
-
-.about-section {
-    display:flex;
-    justify-content: center;
-    margin: 1em auto;
-    width:864px;
-    height:14em;
-}
-
-.about-details {
-    margin-left:3em;
+    width: 60%;
 }
 
 h2 {
@@ -265,4 +192,46 @@ p {
 
 .contact-section h2 {
     padding:.5em;
+}
+
+
+
+@media (max-width:800px) {
+    body {
+        background-color: pink;
+    }
+
+    header {
+        align-items: center;
+    }
+
+    toolbar {
+        display:flex;
+        flex-direction: column;
+        margin-left:1em;
+    }
+
+    top-section {
+        display:flex;
+        flex-direction: column;
+        margin-top: 2em;
+        width:80%;
+    }
+
+    top-section-information {
+        padding-left: 0em;
+        align-items: center;
+    }
+    
+    .about-me-section {
+        text-align: center;
+    }
+    
+}
+
+
+@media (max-width:500px) {
+    body {
+        background-color:forestgreen;
+    }
 }
