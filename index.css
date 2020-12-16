@@ -42,7 +42,12 @@ table {
 	border-spacing: 0;
 }
 
-/* ========================= Reset end, media start ========================== */
+/* ========================= new code ========================== */
+
+
+
+
+/* ========================= media start ========================== */
 
 * {
     border: 1px solid black;
@@ -56,14 +61,18 @@ table {
     .top-section {
         display:flex;
         flex-direction: column;
+        justify-content: center; /*why doesn't this center it by itself? I had to do margin-right and margin-left auto to center...*/
         margin-top: 2em;
+        margin-right: auto;
+        margin-left: auto;
+        width:80%;
     }
     
     image-container {
         display: flex;
         justify-content: center;
     }
-    
+
     .top-section h2 {
         display: flex;
         justify-content: center;
@@ -71,12 +80,19 @@ table {
     
     .top-section button {
         display: flex;
-        justify-content: center;
+        justify-content: center; /*why doesn't this center it by itself? I had to do margin-right and margin-left auto to center...*/
+        width:10em;
+        height: 3em;
+        line-height:3em;
+        margin: auto; 
     }
     
-    .top-section .about-me-section {
+    .about-me-section {
         display: flex;
         justify-content: center;
+        text-align: center;
+        margin: auto;
+        width: 80%;
     }
 }
 
@@ -90,13 +106,7 @@ table {
 
 /* ========================= media end ========================== */
 
-/* ========================= new code ========================== */
 
-
-
-
-
-/* ========================= new code end ========================== */
 
 about-marc {
     margin-top:1000px;
@@ -117,8 +127,6 @@ a:link {
     background-color:black;
     color:white;
 }
-
-
 
 .header-area {
     background-color: gray;
