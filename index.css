@@ -53,12 +53,51 @@ table {
     border: 1px solid black;
 }
 
+top-section {
+    display:flex;
+    flex-direction: row;
+    justify-content: center; /*why doesn't this center it by itself? I had to do margin-right and margin-left auto to center...*/
+    margin-top: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    width:80%;
+}
+
+image-container {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+top-section-information {
+    display:flex;
+    flex-direction: column;
+    padding-left: 3em;
+}
+
+
+top-section button {
+    display: flex;
+    justify-content: center;
+    width:10em;
+    height: 3em;
+    line-height:3em;
+}
+
+.about-me-section {
+    display: flex;
+
+    text-align: center;
+    width: 80%;
+}
+
 @media (max-width:800px) {
     body {
         background-color: pink;
     }
 
-    .top-section {
+    top-section {
         display:flex;
         flex-direction: column;
         justify-content: center; /*why doesn't this center it by itself? I had to do margin-right and margin-left auto to center...*/
@@ -67,18 +106,22 @@ table {
         margin-left: auto;
         width:80%;
     }
+
+    top-section-information {
+        padding-left: 0em;
+    }
     
     image-container {
         display: flex;
         justify-content: center;
     }
 
-    .top-section h2 {
+    top-section h2 {
         display: flex;
         justify-content: center;
     }
     
-    .top-section button {
+    top-section button {
         display: flex;
         justify-content: center; /*why doesn't this center it by itself? I had to do margin-right and margin-left auto to center...*/
         width:10em;
