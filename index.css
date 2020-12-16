@@ -73,6 +73,8 @@ image-container {
 top-section-information {
     display:flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     padding-left: 3em;
 }
 
@@ -87,8 +89,7 @@ top-section button {
 
 .about-me-section {
     display: flex;
-
-    text-align: center;
+    text-align: flex-start;
     width: 80%;
 }
 
