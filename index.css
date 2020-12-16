@@ -46,10 +46,6 @@ table {
 
 
 
-* {
-    border: 1px solid black;
-}
-
 
 a:link {
     text-decoration: none;
@@ -155,29 +151,21 @@ p {
 
 gallery-section {
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 33%;
+    justify-content: center;
     align-items: center;
-    width:80%;
-    margin: 0 auto;
+    margin: 1rem auto;
     padding: 1em;
 }
 
-gallery-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap; 
-    /* 
-    would be great to designate a wrap point such that in desktop view it breaks in pairs of 2 (no lines with only 1 image)
-    some leads: 
-    https://forum.freecodecamp.org/t/how-does-flex-wrap-decide-how-many-flex-items-to-be-wrapped/336444
-    https://stackoverflow.com/questions/19574851/how-to-specify-an-element-after-which-to-wrap-in-css-flexbox
-     */
-    justify-content: center;
-}
 
 row-item {
     padding:1em;
     text-align: center;
+    flex-basis:33%;
+    
 }
 
 
@@ -246,7 +234,7 @@ row-item {
 
     gallery-section img {
        width:20em;
-       heigth:20em;
+       height:20em;
     }
 
     .contact-section h2 {
