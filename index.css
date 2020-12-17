@@ -45,7 +45,6 @@ table {
 
 
 
-
 a:link {
     text-decoration: none;
     color:black;
@@ -57,12 +56,12 @@ a:link {
     color:black;
   }
 
-  .button:hover a {
+button:hover a {
     background-color:black;
     color:white; /* Can't get my button text to go white when hovered... */
 }
 
-.button:hover {
+button:hover {
     background-color:black;
     color:white; /* Can't get my button text to go white when hovered... */
 }
@@ -88,19 +87,19 @@ toolbar {
     margin-left:1em;
 }
 
-.button {
+button {
     border: 1px black solid;
-    padding: 1em;
+    padding:1em;
     font-size: 1em;
     background-color: lightgray;
-    width:5em;
+    width:6em;
     text-align:center;
 }
+
 
 top-section {
     display:flex;
     flex-direction: row;
-    justify-content: center; /*why doesn't this center it by itself? I had to do margin-right and margin-left auto to center...*/
     margin-top: 2em;
     margin-right: auto;
     margin-left: auto;
@@ -127,13 +126,8 @@ top-section-information {
     padding-left: 3em;
 }
 
-
-top-section button {
-    display: flex;
-    justify-content: center;
-    width:10em;
-    height: 3em;
-    line-height:3em;
+top-section-information button {
+    width: 10em;
 }
 
 .about-me-section {
@@ -157,10 +151,8 @@ gallery-section {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-basis: 33%;
     justify-content: center;
-    align-items: center;
-    margin: 1rem auto;
+    margin: 1em auto;
     padding: 1em;
 }
 
@@ -168,14 +160,13 @@ gallery-section {
 row-item {
     padding:1em;
     text-align: center;
-    flex-basis:33%;
-    
+    flex-basis:20%;
 }
 
 
 
 
-.footer {
+footer {
     display:flex;
     align-items:center;
     justify-content: center;
@@ -185,22 +176,27 @@ row-item {
     background-color: gray;
 }
 
-.contact-section {
+contact-section {
     display:flex;
     flex-flow: column;
     align-items: center;
 }
 
-.contact-section h2 {
+contact-section h2 {
     padding:.5em;
 }
 
+footer contact-section button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    width: 8em;
+    height: 2em;
+}
 
 
 @media (max-width:800px) {
-    body {
-        background-color: pink;
-    }
 
     header {
         align-items: center;
@@ -227,28 +223,37 @@ row-item {
     .about-me-section {
         text-align: center;
     }
+
+    row-item {
+        padding:1em;
+        text-align: center;
+        flex-basis:33%;
+    }
+
+    gallery-section img {
+        width:10em;
+        height:10em;
+     }
+    
     
 }
 
 
 @media (max-width:500px) {
-    body {
-        background-color:forestgreen;
-    }
 
     gallery-section img {
-       width:20em;
-       height:20em;
+       width:15em;
+       height:15em;
     }
 
-    .contact-section h2 {
+    contact-section h2 {
         display:none;
     }
 
-    .contact-section .button {
+}
+    contact-section button {
         width:5em;
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     
-}
