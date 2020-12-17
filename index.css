@@ -41,29 +41,20 @@ table {
 	border-spacing: 0;
 }
 
-/* ========================= new code ========================== */
-
-
 
 a:link {
     text-decoration: none;
     color:black;
   }
   
-  
   a:visited {
     text-decoration: none;
     color:black;
   }
 
-button:hover a {
-    background-color:black;
-    color:white; /* Can't get my button text to go white when hovered... */
-}
-
 button:hover {
     background-color:black;
-    color:white; /* Can't get my button text to go white when hovered... */
+    color:white; 
 }
 
 header {
